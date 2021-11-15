@@ -4,15 +4,19 @@
   grid-template-columns: 250px auto;
   height: 100vh;
   overflow: scroll;
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-the-cliff-etretat-sunset-claude-monet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  color: white;
+  background-color: bisque;
+  color: rgb(228, 101, 28);
   grid-column: 1 / span 2;
-  padding: 10px 5px;
+  padding: 20px 5px;
 }
 
 form {
@@ -35,20 +39,32 @@ article {
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: rgb(55, 109, 84);
 }
 
 nav p:hover {
-  text-decoration: underline;
+  text-decoration: rgb(127, 212, 184) wavy underline;
   cursor: pointer;
+}
+
+article .title {
+  font-family: monospace;
 }
 
 article .date {
   font-style: italic;
+  color: brown;
 }
 
 article .body {
   white-space: break-spaces;
+  font-size: large;
+  color: brown;
+}
+
+article .author {
+  font-style: italic;
+  color: brown;
 }
 
 .error {
